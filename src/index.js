@@ -21,3 +21,9 @@ function createElement(elementType, props, ...children) {
     children,
   };
 }
+
+function render(vdom, container) {
+  const element = buildDOM(vdom);
+
+  container.appendChild(element);
+}
